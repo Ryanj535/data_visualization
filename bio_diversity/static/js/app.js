@@ -38,10 +38,10 @@ function buildCharts(sample) {
         color:  sampleData.otu_id,
       }
     }];
-    console.log(trace1);
     // @TODO: Build a Pie Chart
     // HINT: You will need to use slice() to grab the top 10 sample_values,
     // otu_ids, and labels (10 each).
+    Plotly.newPlot("pie", trace1);
   });
 }
 
